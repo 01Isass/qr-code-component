@@ -1,0 +1,54 @@
+body{
+    background-color: #D6E1F0;
+    font-family: 'Outfit', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*Height(altura) não usa 100% da tela, precisa colocar isso para que use a tela toda. Widht(largura) já ocupa 100% da tela então não precisa*/
+    margin: 0; /*Colocar margin 0 pois o navegador vem com um margin automatico*/
+    flex-direction: column;
+
+}
+
+footer{
+    padding: 20px;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(216, 15%, 48%);
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: 700;
+    color: #1f3251;
+}
+
+img{
+    width: 100%;        /*Com width: 100%, você diz: "Ocupe toda a largura do seu pai (o .card), mas não passe disso".
+                        Se o card diminuir, a imagem diminui junto.*/
+    height: auto;       /*O auto avisa ao navegador: "Calcule a altura automaticamente para manter a proporção original".
+                        Esse é o segredo para a imagem não ficar "esticada" ou "esmagada".*/
+    
+    border-radius: 1rem;
+    
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: #FFFFFD;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    width: 320px;
+    
+    
+}
